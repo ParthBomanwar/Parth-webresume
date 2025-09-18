@@ -14,7 +14,7 @@ const Intro = ({ onImageClick }) => {
       <div className="intro-profile" onClick={handleImageClick}>
         <img
           className="intro-image"
-          src={process.env.PUBLIC_URL + '/1632773493395.jpg'}
+          src={process.env.PUBLIC_URL + '/IMG.jpg'}
           alt=""
         />
         <h2 className="intro-name">Parth Bomanwar</h2>
@@ -24,3 +24,4 @@ const Intro = ({ onImageClick }) => {
 };
 
 export default Intro;
+
