@@ -20,8 +20,8 @@ export default function Hero() {
         </div>
 
         <p className="lead hero-paragraph">
-          Electronics & Telecommunication undergrad specializing in <strong>AI/ML & Data Science</strong>.
-          I turn messy data into decisions, and I’m currently looking for a <strong>Data Scixence/AI/ML Internship</strong>.
+          Computer Science Engineering undergrad specializing in <strong>Cybersecurity</strong>.
+          From detecting threats to designing intelligent solutions, I’m a fresher ready to make an impact in <strong>Cybersecurity and AI</strong>.
         </p>
 
         <p className="lead hero-paragraph">
@@ -38,3 +38,4 @@ export default function Hero() {
     </section>
   );
 }
+
