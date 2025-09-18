@@ -9,11 +9,10 @@ const Header = () => {
       </h2>
       <div className="container">
         <p className="lead">
-        A co-founder and highly driven AI/ML developer with a strong foundation in building production-ready mobile
-        applications. My expertise spans the full product lifecycle, from conceiving and developing a personalized AI engine
-        for a mobile app to optimizing and fine-tuning AI models for real-world applications. My experience demonstrates a
-        unique blend of technical, data management, and collaborative skills, honed through my work as a co-founder and by
-        leading teams to deliver high-impact products.
+        Motivated Computer Science and Engineering student with a strong passion for Cybersecurity, Artificial
+       Intelligence, Machine Learning, and Web Development. Skilled in digital forensics, malware analysis, and cloud
+      computing principles, with a strong foundation in programming and operating systems. Seeking opportunities to
+       apply technical skills, leadership experience, and industry knowledge in a dynamic and innovative environment.
       </p>
       </div>
       <hr className="separator" />
@@ -22,3 +21,4 @@ const Header = () => {
 };
 
 export default Header;
+
