@@ -1,0 +1,128 @@
+.experience-container {
+  padding: 2rem;
+  background-color: transparent; /* Allow global gradient to show through */
+  color: var(--text-100);
+  text-align: center;
+}
+
+.experience-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 1.5rem; /* Space between cards */
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  background-color: var(--card-30);
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-item:hover {
+  transform: translateY(-7px) scale(1.03); /* More pronounced lift and grow on hover */
+}
+
+.experience-content {
+  padding: 0; /* Remove padding as it's handled by the item */
+  position: relative; /* Ensure z-index works */
+  z-index: 1;
+}
+
+.experience-item h3 {
+  font-size: 1.8rem;
+  color: var(--text-100);
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.experience-details {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+}
+
+.experience-item:hover .experience-details {
+  opacity: 1;
+  max-height: 500px; /* A value large enough to contain all content */
+  margin-top: 1rem; /* Add some space between title and details */
+}
+
+.experience-item p {
+  font-size: 1rem;
+  color: var(--text-70);
+  margin-bottom: 0.3rem;
+}
+
+.experience-item ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  padding-left: 0;
+}
+
+.experience-item li {
+  font-size: 0.95rem;
+  color: var(--text-50);
+  margin-bottom: 0.2rem;
+}
+
+.experience-item .dates {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--text-50);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .experience-container {
+    padding: 1.5rem 1rem; /* Reduced padding for mobile */
+  }
+  
+  .experience-list {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 1rem; /* Smaller gap */
+  }
+  
+  .experience-item {
+    padding: 1rem; /* Reduced padding */
+  }
+  
+  .experience-item h3 {
+    font-size: 1.5rem; /* Smaller title on mobile */
+  }
+  
+  .experience-item p {
+    font-size: 0.9rem;
+  }
+  
+  .experience-item li {
+    font-size: 0.85rem;
+  }
+  
+  .experience-item .dates {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-container {
+    padding: 1rem 0.8rem;
+  }
+  
+  .experience-item {
+    padding: 0.8rem;
+  }
+  
+  .experience-item h3 {
+    font-size: 1.3rem;
+  }
+}
+

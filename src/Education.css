@@ -1,0 +1,49 @@
+.education-container {
+  padding: 2rem;
+  background-color: transparent; 
+  color: var(--text-100);
+  text-align: center;
+}
+
+.education-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 1.5rem; /* Space between cards */
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.education-item {
+  background-color: var(--card-30); /* Slightly lighter card background */
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Adjusted for more depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover */
+  text-align: left;
+}
+
+.education-item:hover {
+  transform: translateY(-7px) scale(1.03); /* More pronounced lift and grow on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7); /* More prominent shadow on hover */
+}
+
+.education-item h3 {
+  font-size: 1.8rem;
+  color: var(--text-100); /* White title */
+  margin-bottom: 0.5rem;
+}
+
+.education-item p {
+  font-size: 1rem;
+  color: var(--text-70); /* Lighter text for details */
+  margin-bottom: 0.3rem;
+}
+
+.education-item .dates-grades {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--text-50);
+}
+
+  

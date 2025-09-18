@@ -1,0 +1,227 @@
+.projects-container {
+  padding: 2rem;
+  background-color: transparent; /* Allow global gradient to show through */
+  color: var(--text-100);
+  text-align: center;
+}
+
+.project-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly smaller minimum for mobile */
+  gap: 1.5rem; /* Space between cards */
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-item {
+  background-color: var(--card-30);
+  padding: 1.5rem; /* Revert padding */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Revert shadow depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Revert height transition removal */
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  /* Removed fixed height */
+}
+
+.project-item:hover {
+  transform: translateY(-5px) scale(1.02); /* Revert transform and scale */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); /* Revert shadow on hover */
+  /* Removed height auto */
+}
+
+.project-image {
+  width: 100%;
+  height: 180px; /* Slightly smaller height for mobile */
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-content {
+  padding: 0; /* Let details handle padding */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%); /* Changed to a darker gradient for better text visibility */
+  color: var(--text-100);
+  z-index: 1;
+  transition: background 0.3s ease; /* Revert transform transition removal */
+  /* Removed transform translateY */
+}
+
+.project-item:hover .project-content {
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 100%);
+  /* Removed transform translateY */
+}
+
+/* Adjust Project Title positioning within content */
+.project-content .project-title {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.project-header {
+  background-color: transparent;
+  color: white;
+  padding: 0;
+  border-radius: 0;
+  font-weight: bold;
+  transition: none;
+}
+
+.project-header:hover {
+  transform: none;
+}
+
+.project-title {
+  font-size: 1.8rem;
+  color: var(--text-100);
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.project-details {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+  /* Removed position, bottom, left, right, background, padding, transform, z-index and margin-top*/
+}
+
+.project-item:hover .project-details {
+  opacity: 1;
+  max-height: 500px; /* A value large enough to contain all content */
+  margin-top: 1rem; /* Add some space between title and details */
+  /* Removed transform */
+}
+
+.project-details p,
+.project-details ul,
+.project-links {
+  opacity: 1;
+  transform: translateY(0);
+  transition: none;
+}
+
+.project-details p {
+  font-size: 1rem;
+  color: var(--text-100); /* Changed to full white for better visibility */
+  margin-bottom: 0.8rem;
+}
+
+.project-details ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.project-details li {
+  font-size: 0.95rem;
+  color: var(--text-70); /* Changed to 70% white for better visibility than 50% */
+  margin-bottom: 0.2rem;
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.project-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.project-links a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--netflix-red);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--text-100);
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-links a:hover {
+  background-color: var(--netflix-red);
+  color: var(--text-100);
+}
+
+.project-links a:focus,
+.project-links a:active {
+  outline: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 1.5rem 1rem; /* Reduced padding for mobile */
+  }
+  
+  .project-items {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 1rem; /* Smaller gap */
+  }
+  
+  .project-item {
+    padding: 1rem; /* Reduced padding */
+  }
+  
+  .project-image {
+    height: 160px; /* Smaller height on mobile */
+  }
+  
+  .project-title {
+    font-size: 1.5rem; /* Smaller title on mobile */
+  }
+  
+  .project-details p {
+    font-size: 0.9rem;
+  }
+  
+  .project-details li {
+    font-size: 0.85rem;
+  }
+  
+  .project-links {
+    flex-direction: column; /* Stack links vertically on mobile */
+    gap: 0.5rem;
+  }
+  
+  .project-links a {
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    padding: 1rem 0.8rem;
+  }
+  
+  .project-item {
+    padding: 0.8rem;
+  }
+  
+  .project-image {
+    height: 140px;
+  }
+  
+  .project-title {
+    font-size: 1.3rem;
+  }
+}
+  

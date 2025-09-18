@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+  /* Color and background are now handled by globals.css */
+  /* background-color: #141414; */
+  /* color: white; */
+}
+
+/* Removed App-header, App-link, separator, resume-entry, resume-entry:hover/.expanded as they are now handled by globals.css or component-specific CSS */
