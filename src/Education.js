@@ -18,7 +18,7 @@ const Education = () => {
       grades: '74.6%'
     },
     {
-      school: 'Shree Maharshi Vidya Mandir',
+      school: 'School of Scholars',
       program: '10th',
       location: 'Gadchiroli, Maharashtra',
       date: '06/2011 - 05/2020',
@@ -47,3 +47,4 @@ const Education = () => {
 };
 
 export default Education;
+
