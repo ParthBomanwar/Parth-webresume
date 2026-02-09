@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="container hero-content">
         <div className="hero-profile">
           <img 
-            src={process.env.PUBLIC_URL + '/IMG.jpg'}
+            src={process.env.PUBLIC_URL + '/Image.jpg'}
             alt="Parth Bomanwar Profile"
             className="hero-image"
           />
@@ -38,4 +38,5 @@ export default function Hero() {
     </section>
   );
 }
+
 
