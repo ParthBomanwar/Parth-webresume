@@ -5,15 +5,14 @@ const Experience = ({ id }) => {
   const [hoveredExperience, setHoveredExperience] = useState(null);
   const experienceData = [
     {
-      company: 'Skillcraft Technologies',
-      role: 'Cybersecurity Intern',
-      location: 'Remote',
-      date: '06/2025',
+      company: 'Maharashtra Remote Sensing Application Center',
+      role: 'Project Intern',
+      location: 'Nagpur',
+      date: '01/2026 - Current',
       details: [
-        'Completed a 1-month internship focused on core cybersecurity practices, demonstrating a strong grasp of technical concepts and security operations.',
-        'Gained hands-on experience in network security, vulnerability management, and malware analysis to assist in securing enterprise systems.',
-        'Received positive recognition for work ethic, professionalism, and ability to handle complex tasks independently.',
-        'Key Skills: Network Security, Python, Cybersecurity basics'
+        'Developing an AI-driven LULC classification system using satellite imagery for accurate land cover mapping.',
+        'Applying image preprocessing, feature extraction, and deep learning models integrated with GIS tools (QGIS) for spatial analysis and visualization.',
+        'Collaborating with researchers to evaluate model performance and improve classification accuracy.',
       ]
     },
     {
@@ -77,4 +76,5 @@ const Experience = ({ id }) => {
 };
 
 export default Experience;
+
 
