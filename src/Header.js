@@ -9,10 +9,9 @@ const Header = () => {
       </h2>
       <div className="container">
         <p className="lead">
-        Motivated Computer Science and Engineering student with a strong passion for Cybersecurity, Artificial
-       Intelligence, Machine Learning, and Web Development. Skilled in digital forensics, malware analysis, and cloud
-      computing principles, with a strong foundation in programming and operating systems. Seeking opportunities to
-       apply technical skills, leadership experience, and industry knowledge in a dynamic and innovative environment.
+       Recent B.Tech graduate in Computer Science and Engineering with a strong foundation in programming, object-oriented
+    programming, data structures, databases, cybersecurity, Salesforce, and AI/ML. Quick learner with strong analytical and
+  problem-solving skills, eager to apply technical knowledge and contribute to real-world projects.
       </p>
       </div>
       <hr className="separator" />
