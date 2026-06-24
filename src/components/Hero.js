@@ -20,8 +20,8 @@ export default function Hero() {
         </div>
 
         <p className="lead hero-paragraph">
-          Computer Science Engineering undergrad specializing in <strong>Cybersecurity</strong>.
-          From detecting threats to designing intelligent solutions, I’m a fresher ready to make an impact in <strong>Cybersecurity and AI</strong>.
+          Recent Computer Science Engineering graduate specialized in <strong>Cybersecurity</strong>.
+          From detecting threats to designing intelligent solutions, I’m a fresher ready to make an impact in <strong>Cybersecurity and AIML</strong>.
         </p>
 
         <p className="lead hero-paragraph">
