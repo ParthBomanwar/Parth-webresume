@@ -38,12 +38,12 @@ const Navbar = () => {
             Github
           </a>
           <a
-            href="https://medium.com/@parthbomanwar"
+            href="https://www.researchgate.net/profile/Parth-Bomanwar"
             target="_blank"
             rel="noopener noreferrer"
             className="navbar__link"
           >
-            Medium
+            Research Publication
           </a>
         </div>
         <div className="navbar__tools">
