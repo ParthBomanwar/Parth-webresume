@@ -8,9 +8,9 @@ const Experience = ({ id }) => {
       company: 'Maharashtra Remote Sensing Application Center',
       role: 'Project Intern',
       location: 'Nagpur',
-      date: '01/2026 - Current',
+      date: '01/2026 - 05/2026',
       details: [
-        'Developing an AI-driven LULC classification system using satellite imagery for accurate land cover mapping.',
+        'Duilt deep learning satellite image change detection model on 500+ LEVIR-CD image pairs; achieved IoU ˜0.55 via hyperparameter tuning.',
         'Applying image preprocessing, feature extraction, and deep learning models integrated with GIS tools (QGIS) for spatial analysis and visualization.',
         'Collaborating with researchers to evaluate model performance and improve classification accuracy.',
       ]
