@@ -10,7 +10,7 @@ const Experience = ({ id }) => {
       location: 'Nagpur',
       date: '01/2026 - 05/2026',
       details: [
-        'Duilt deep learning satellite image change detection model on 500+ LEVIR-CD image pairs; achieved IoU ˜0.55 via hyperparameter tuning.',
+        'Built deep learning satellite image change detection model on 500+ LEVIR-CD image pairs; achieved IoU ˜0.55 via hyperparameter tuning.',
         'Applying image preprocessing, feature extraction, and deep learning models integrated with GIS tools (QGIS) for spatial analysis and visualization.',
         'Collaborating with researchers to evaluate model performance and improve classification accuracy.',
       ]
